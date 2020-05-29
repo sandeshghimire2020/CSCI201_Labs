@@ -1,0 +1,32 @@
+Script started on Mon 10 Feb 2020 05:54:18 PM CST
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[?1034h[tc3456co@ahscentos Lab1]$ g++ Facti[Korial.cpp
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[tc3456co@ahscentos Lab1]$ G[Kg++ Fac[K[K[K-o Facti[Korial Factorial.cpp
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[tc3456co@ahscentos Lab1]$ ./o.out[1P.outa.out
+Enter a number: 23  12
+The factorial 12 is: 479001600]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[tc3456co@ahscentos Lab1]$ g++ Factorial.cpp
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[tc3456co@ahscentos Lab1]$ o[K./o[Ka.out
+Enter a number: 12
+The factorial of 12 is: 479001600]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[tc3456co@ahscentos Lab1]$ cad[Kt Facti[Korial.cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Num,Pro;
+    cout << "Enter a number: ";
+    cin>> Num;
+    Pro=1;
+    for(int Index=1 ; Index<=Num;Index++){
+        Pro=Pro*Index;
+    }
+    cout<<"The factorial of "<<Num<<" is: "<<Pro;
+
+
+    return 0;
+}
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[tc3456co@ahscentos Lab1]$ ./Factorial
+Enter a number: 12
+The factorial 12 is: 479001600]0;tc3456co@ahscentos:~/LabAssignment03/Lab1[tc3456co@ahscentos Lab1]$ exit
+
+Script done on Mon 10 Feb 2020 05:57:13 PM CST

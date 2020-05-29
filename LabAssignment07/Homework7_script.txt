@@ -1,0 +1,87 @@
+Script started on Tue 31 Mar 2020 07:15:03 PM CDT
+]0;tc3456co@ahscentos:~/Homework07[?1034h[tc3456co@ahscentos Homework07]$ g++[K[K[K./a.outcat Assignment7.cppg++[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg++[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;tc3456co@ahscentos:~/Homework07[tc3456co@ahscentos Homework07]$ g++ Assignment7.cpp[12P./a.outcat Assignment7.cpp
+#include <iostream>
+
+using namespace std;
+void Display(int);
+//creating structure
+struct Store
+    {
+        string Name;
+        int Mnumber;
+        int Price;
+    };
+
+struct Store S[10];
+
+//Main function
+
+int main()
+{
+    int check=0;
+    int Index=-1;
+    //starting the loop
+    do{
+        Index=Index+1;
+        //input product name by user
+        cout<<"Enter product Name: ";
+        cin>>S[Index].Name;
+        //checking if user wants to quit or not.
+        if (S[Index].Name=="quit"){
+            check=1;
+        }
+        else
+        {
+
+        cout<<"Enter product Number: ";
+        cin>>S[Index].Mnumber;
+        cout<<"Enter product Price: ";
+        cin>>S[Index].Price;
+        }
+
+    //while condition
+    }while(check!=1 && Index<=9);
+
+    Display(Index-1);
+
+    return 0;
+}
+//function to display
+void Display(int i){
+
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+
+    cout<<"Name \t\t"<<"No.\t\t"<<"Price\t\t"<<endl;
+
+    for(int j=0;j<=i;j++){
+
+        cout<<S[j].Name<<"\t\t"<<S[j].Mnumber<<"\t\t"<<S[j].Price<<endl;
+
+    }
+}
+]0;tc3456co@ahscentos:~/Homework07[tc3456co@ahscentos Homework07]$ cat Assignment7.cppg++[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat Assignment7.cppg++[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12P./a.out
+Enter product Name: some
+Enter product Number: 1
+Enter product Price: 12
+Enter product Name: temp
+Enter product Number: 2
+Enter product Price: 40
+Enter product Name: so  tryy 
+Enter product Number: 3
+Enter product Price: 6
+Enter product Name: quit
+
+
+
+
+Name 		No.		Price		
+some		1		12
+temp		2		40
+try		3		6
+]0;tc3456co@ahscentos:~/Homework07[tc3456co@ahscentos Homework07]$ exit
+
+Script done on Tue 31 Mar 2020 07:16:01 PM CDT

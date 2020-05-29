@@ -1,0 +1,48 @@
+Script started on Mon 03 Feb 2020 06:19:25 PM CST
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.1[?1034h[tc3456co@ahscentos Lab2.1]$ g++ main.cpp
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.1[tc3456co@ahscentos Lab2.1]$ ./a.out
+Enter the number of units sold: 34
+ The total price is 4375
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.1[tc3456co@ahscentos Lab2.1]$ cat main.cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Sunit;
+
+
+    cout << "Enter the number of units sold: ";
+    cin>>Sunit;
+
+    if ((Sunit>=10) && (Sunit<=19))
+        cout<<" The total price is "<< ((Sunit*99)*20/100)+(Sunit*99)<<endl;
+
+    else if((Sunit>=20) && (Sunit<=49))
+            cout<<" The total price is "<< ((Sunit*99)*30/100)+(Sunit*99)<<endl;
+
+    else if ((Sunit>=50) && (Sunit<=99))
+        cout<<" The total price is "<< ((Sunit*99)*40/100)+(Sunit*99)<<endl;
+
+    else if (Sunit>100)
+        cout<<" The total price is "<< ((Sunit*99)*50/100)+(Sunit*99)<<endl;
+
+    else if (Sunit<0)
+        cout<<"ERROR: The unit should be greater then 0: ";
+    else
+        cout<<" The total price is"<< ((Sunit*99)*0/100)+(Sunit*99)<<endl;
+
+
+
+    return 0;
+}
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.1[tc3456co@ahscentos Lab2.1]$ ./a.out
+Enter the number of units sold: 55
+ The total price is 7623
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.1[tc3456co@ahscentos Lab2.1]$ ./a.out
+Enter the number of units sold: 77
+ The total price is 10672
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.1[tc3456co@ahscentos Lab2.1]$ exit
+
+Script done on Mon 03 Feb 2020 06:20:32 PM CST

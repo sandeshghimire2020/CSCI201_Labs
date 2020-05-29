@@ -1,0 +1,47 @@
+(a)
+
+changing the Line 12
+
+error: (Lab1.cpp: In function ‘int main()’:
+Lab1.cpp:13:5: error: expected ‘;’ before ‘cin’
+     cin>> radius;)
+
+(b)
+
+changing the line Line 11
+
+
+error: (Lab1.cpp: In function ‘int main()’:
+Lab1.cpp:12:5: error: expected initializer before ‘cout’
+     cout<< "Enter the redius of a sphere: ";
+     ^
+Lab1.cpp:14:5: error: ‘volume’ was not declared in this scope
+     volume= 4.0/3.0*PI*radius*radius*radius;)
+
+No, the line are not the same.
+
+(c)
+
+Changing the Line 5
+
+error: (Lab1.cpp: In function ‘int main()’:
+Lab1.cpp:12:5: error: ‘cout’ was not declared in this scope
+     cout<< "Enter the redius of a sphere: ";
+     ^
+Lab1.cpp:13:5: error: ‘cin’ was not declared in this scope
+     cin>> radius;
+     ^
+Lab1.cpp:15:51: error: ‘endl’ was not declared in this scope
+     cout<<"The volume of sphere is: "<< volume << endl;)
+
+No, the line are not the same
+
+(d)
+
+changing the Line 11
+
+error: (Lab1.cpp: In function ‘int main()’:
+Lab1.cpp:14:5: error: ‘volume’ was not declared in this scope
+     volume= 4.0/3.0*PI*radius*radius*radius;)
+
+No, the line are not the same

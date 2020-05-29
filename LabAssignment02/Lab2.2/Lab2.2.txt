@@ -1,0 +1,41 @@
+Script started on Mon 03 Feb 2020 06:22:10 PM CST
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.2[?1034h[tc3456co@ahscentos Lab2.2]$ g++ main.cpp
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.2[tc3456co@ahscentos Lab2.2]$ ./a.out
+Enter the number of books you brought this months: 3
+The total points you got this months is: 30
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.2[tc3456co@ahscentos Lab2.2]$ cat main.cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Books;
+
+
+    cout << "Enter the number of books you brought this months: ";
+    cin>>Books;
+    switch(Books)
+    {
+    case 1: cout<<"The total points you got this months is: 5"<<endl;
+            break;
+    case 2: cout<<"The total points you got this months is: 15"<<endl;
+            break;
+    case 3: cout<<"The total points you got this months is: 30"<<endl;
+            break;
+    case 4: cout<<"The total points you got this months is: 60"<<endl;
+            break;
+    case 0: cout<<"The total points you got this months is: 0"<<endl;
+    default : cout<<"ERROR: enter positive number"<<endl;
+
+    }
+
+
+    return 0;
+}
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.2[tc3456co@ahscentos Lab2.2]$ ./a.[Kout[K[K[K.out
+Enter the number of books you brought this months: 4
+The total points you got this months is: 60
+]0;tc3456co@ahscentos:~/LabAssignment02/Lab2.2[tc3456co@ahscentos Lab2.2]$ exit
+
+Script done on Mon 03 Feb 2020 06:24:48 PM CST

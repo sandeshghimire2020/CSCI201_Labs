@@ -1,0 +1,61 @@
+Script started on Mon 10 Feb 2020 06:21:29 PM CST
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab2[?1034h[tc3456co@ahscentos Lab2]$ g++ Interest.cpp
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab2[tc3456co@ahscentos Lab2]$ cat Interest.cpp
+#include <iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+    float Amount;
+    float Rate;
+    int Count=1;
+    cout<<"Enter the amount $";
+    cin>> Amount;
+    cout<<"Enter the interest value(in percentage):";
+    cin>>Rate;
+    cout<<"Year\t\tAmount on deposit"<<endl;
+    cout <<setprecision(2)<<fixed;
+    while(Count<=10)
+    {
+
+        Amount= Amount + Amount*(Rate/100);
+        cout<<Count<<"\t\t$"<<Amount<<endl;
+        Count=Count+1;
+
+    }
+
+    return 0;
+}
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab2[tc3456co@ahscentos Lab2]$ a[K./a.out
+Enter the amount $7000
+Enter the interest value(in percentage):8
+Year		Amount on deposit
+1		$7560.00
+2		$8164.80
+3		$8817.98
+4		$9523.42
+5		$10285.30
+6		$11108.12
+7		$11996.77
+8		$12956.51
+9		$13993.03
+10		$15112.47
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab2[tc3456co@ahscentos Lab2]$ ./a.out
+Enter the amount $1000
+Enter the interest value(in percentage):5
+Year		Amount on deposit
+1		$1050.00
+2		$1102.50
+3		$1157.62
+4		$1215.51
+5		$1276.28
+6		$1340.10
+7		$1407.10
+8		$1477.46
+9		$1551.33
+10		$1628.89
+]0;tc3456co@ahscentos:~/LabAssignment03/Lab2[tc3456co@ahscentos Lab2]$ exit
+
+Script done on Mon 10 Feb 2020 06:22:11 PM CST

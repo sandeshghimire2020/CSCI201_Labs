@@ -1,0 +1,57 @@
+Script started on Mon 27 Jan 2020 11:09:26 PM CST
+]0;tc3456co@ahscentos:~/LabAssignment1[?1034h[tc3456co@ahscentos LabAssignment1]$ g++ -o Labs[KScript1 Lab1.cpp
+]0;tc3456co@ahscentos:~/LabAssignment1[tc3456co@ahscentos LabAssignment1]$ cat Lab1.cpp
+// Sandesh Ghimire
+//CSCI 201: lab assignment 1
+
+
+#include <iostream>
+
+using namespace std;
+const double PI= 3.12159265;
+int main()
+{
+    double radius, volume;
+    cout<< "Enter the redius of a sphere: ";
+    cin>> radius;
+    volume= 4.0/3.0*PI*radius*radius*radius;
+    cout<<"The volume of sphere is: "<< volume << endl;
+
+    return 0;
+
+}
+]0;tc3456co@ahscentos:~/LabAssignment1[tc3456co@ahscentos LabAssignment1]$ ./LabScript1
+Enter the redius of a sphere: 22
+The volume of sphere is: 44318.3
+]0;tc3456co@ahscentos:~/LabAssignment1[tc3456co@ahscentos LabAssignment1]$ g=[K++ Lab1.cpp
+[01m[KLab1.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KLab1.cpp:13:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcin[m[K’
+     cin>> radius;
+[01;32m[K     ^[m[K
+]0;tc3456co@ahscentos:~/LabAssignment1[tc3456co@ahscentos LabAssignment1]$ g++ Lab1.cpp
+[01m[KLab1.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KLab1.cpp:12:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kcout[m[K’
+     cout<< "Enter the redius of a sphere: ";
+[01;32m[K     ^[m[K
+[01m[KLab1.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvolume[m[K’ was not declared in this scope
+     volume= 4.0/3.0*PI*radius*radius*radius;
+[01;32m[K     ^[m[K
+]0;tc3456co@ahscentos:~/LabAssignment1[tc3456co@ahscentos LabAssignment1]$ g++ Lab1.cpp
+[01m[KLab1.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KLab1.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+     cout<< "Enter the redius of a sphere: ";
+[01;32m[K     ^[m[K
+[01m[KLab1.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcin[m[K’ was not declared in this scope
+     cin>> radius;
+[01;32m[K     ^[m[K
+[01m[KLab1.cpp:15:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+     cout<<"The volume of sphere is: "<< volume << endl;
+[01;32m[K                                                   ^[m[K
+]0;tc3456co@ahscentos:~/LabAssignment1[tc3456co@ahscentos LabAssignment1]$ g++  [KLab1.cpp
+[01m[KLab1.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KLab1.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvolume[m[K’ was not declared in this scope
+     volume= 4.0/3.0*PI*radius*radius*radius;
+[01;32m[K     ^[m[K
+]0;tc3456co@ahscentos:~/LabAssignment1[tc3456co@ahscentos LabAssignment1]$ exit
+
+Script done on Mon 27 Jan 2020 11:11:58 PM CST

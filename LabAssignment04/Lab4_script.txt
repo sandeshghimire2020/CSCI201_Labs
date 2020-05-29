@@ -1,0 +1,86 @@
+Script started on Mon 17 Feb 2020 06:25:00 PM CST
+]0;tc3456co@ahscentos:~/LabAssignment04[?1034h[tc3456co@ahscentos LabAssignment04]$ g++ Lab4.cpp
+]0;tc3456co@ahscentos:~/LabAssignment04[tc3456co@ahscentos LabAssignment04]$ ./a.out
+enter 10 numbers: 12
+3
+4
+5
+2
+4
+5
+-6
+-7
+4
+Your Array has these values: 
+12 3 4 5 2 4 5 -6 -7 4 
+Smallest: -7
+Largest: 12
+Sum: 26
+Average: 2.6
+]0;tc3456co@ahscentos:~/LabAssignment04[tc3456co@ahscentos LabAssignment04]$ cat lab4.cpp
+cat: lab4.cpp: No such file or directory
+]0;tc3456co@ahscentos:~/LabAssignment04[tc3456co@ahscentos LabAssignment04]$ cat Lab4.cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Number[10];
+    int Temp;
+
+    cout<<"enter 10 numbers: ";
+    for (int i=0;i<10;i++)
+    {
+
+        cin>>Number[i];
+
+    }
+    cout<<"Your Array has these values: "<<endl;
+    int STemp=Number[0];
+    int LTemp=Number[0];
+    int Sum= Number[0];
+    cout<<Number[0]<<" ";
+    for (int i=1;i<10;i++)
+    {
+
+        cout<<Number[i]<<" ";
+        if (STemp>Number[i]){
+            STemp=Number[i];
+            }
+        if (LTemp<Number[i]){
+            LTemp=Number[i];
+        }
+        Sum=Sum+Number[i];
+    }
+
+
+    cout<<endl;
+
+    cout<<"Smallest: "<<STemp<<endl;
+    cout<<"Largest: "<<LTemp<<endl;
+    cout<<"Sum: "<<Sum<<endl;
+    cout<<"Average: "<<Sum/10.0<<endl;
+    return 0;
+}
+]0;tc3456co@ahscentos:~/LabAssignment04[tc3456co@ahscentos LabAssignment04]$ ./.[Ka.out
+enter 10 numbers: 10
+5
+3
+-5
+9
+14
+-8
+0
+2
+-6
+Your Array has these values: 
+10 5 3 -5 9 14 -8 0 2 -6 
+Smallest: -8
+Largest: 14
+Sum: 24
+Average: 2.4
+]0;tc3456co@ahscentos:~/LabAssignment04[tc3456co@ahscentos LabAssignment04]$ exit
+exit
+
+Script done on Mon 17 Feb 2020 06:27:04 PM CST

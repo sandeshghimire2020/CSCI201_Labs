@@ -1,0 +1,100 @@
+Script started on Fri 28 Feb 2020 11:18:05 PM CST
+]0;tc3456co@ahscentos:~/LabAssingnment05[?1034h[tc3456co@ahscentos LabAssingnment05]$ g++ main.co[Kpp
+]0;tc3456co@ahscentos:~/LabAssingnment05[tc3456co@ahscentos LabAssingnment05]$ ./a.out
+Enter the number of employees: 2
+Enter the salary for employee 1: 25000
+Employee 1 receives a raise of $1250
+Enter the salary for employee 2: 45000
+Employee 2 receives a raise of $1350
+The total cost of raises: $2600]0;tc3456co@ahscentos:~/LabAssingnment05[tc3456co@ahscentos LabAssingnment05]$ cad [K[Kt main.cpp
+#include <iostream>
+
+using namespace std;
+//user-defined function prototypes
+//the function getNumber returns an integer value entered by the user giving the number of employ
+int getNumber();
+//the function getSalary returns a float value entered by the user giving the employee's sa
+double getSalary(int);
+// the function calcRaise returns the raise calculated for the salary pas
+double calcRaise(double);
+/* the function totalRaises returns the new total of raises using the current total and current raise being processed */
+double totalRaises(double,double);
+
+
+
+
+
+int main()
+{
+  int Num;
+  double Salary;
+  double TotalRaise,Raise;
+
+  Num=getNumber();
+  for (int i=1;i<=Num;i++)
+
+    {
+        Salary= getSalary(i);
+        Raise=calcRaise(Salary);
+        cout<<"Employee "<<i<<" receives a raise of $"<<Raise<<endl;
+        TotalRaise= totalRaises(Raise,TotalRaise);
+
+    }
+    cout<<"The total cost of raises: $"<<TotalRaise;
+
+
+}
+int getNumber()
+{
+    int Num;
+    cout<<"Enter the number of employees: ";
+    cin>> Num;
+    return Num;
+}
+double getSalary(int empNumber)
+{
+    double Salary=0.00;
+
+        cout<<"Enter the salary for employee "<<empNumber<<": ";
+        cin>>Salary;
+        return Salary;
+
+}
+double calcRaise(double salary)
+{
+    double Raise;
+
+    if (salary <= 25000)
+    {
+       Raise= 0.05* salary;
+    }
+    else if (salary>25001 && salary<3500)
+    {
+        Raise=  0.04* salary;
+    }
+    else if(salary > 35001)
+    {
+        Raise=0.03*salary;
+
+    }
+
+    return Raise;
+}
+
+double totalRaises(double raise,double total)
+{
+
+
+    return  raise+total;
+}
+]0;tc3456co@ahscentos:~/LabAssingnment05[tc3456co@ahscentos LabAssingnment05]$ ./a.out
+Enter the number of employees: 3
+Enter the salary for employee 1: 45000
+Employee 1 receives a raise of $1350
+Enter the salary for employee 2: 50000
+Employee 2 receives a raise of $1500
+Enter the salary for employee 3: 25000
+Employee 3 receives a raise of $1250
+The total cost of raises: $4100]0;tc3456co@ahscentos:~/LabAssingnment05[tc3456co@ahscentos LabAssingnment05]$ exit
+
+Script done on Fri 28 Feb 2020 11:19:14 PM CST
